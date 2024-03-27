@@ -5,6 +5,11 @@ public class Complex {
     private double realPart;
     private double imaginaryPart;
 
+    /**
+     * Конструктор комлексного число
+     * @param realPart - действительная часть
+     * @param imaginaryPart - мнимая часть
+     */
     public Complex(double realPart, double imaginaryPart) {
         this.realPart = realPart;
         this.imaginaryPart = imaginaryPart;
@@ -14,6 +19,10 @@ public class Complex {
         return new Complex(realPart, 0);
     }
 
+    /**
+     * Перевод комплексного значения в строку
+     * @return комплексное число в виде строки
+     */
     @Override
     public String toString() {
 
