@@ -6,15 +6,25 @@ public class Polynom {
     private double b;
     private double c;
 
+    /**
+     * Конструктор полинома
+     * @param a - коэффициент при x^2
+     * @param b - коэффициент при x
+     * @param c - свободный коэффициент
+     */
     public Polynom(double a, double b, double c) {
-        if (a==0) {
-            throw new IllegalArgumentException("a can not be equal to 0");
+        if (a == 0) {
+            throw new IllegalArgumentException("Коэффициент a должен быть отличен от нуля");
         }
         this.a = a;
         this.b = b;
         this.c = c;
     }
 
+    /**
+     * Вычисление дискриминанта
+     * @return значение дискриминанта
+     */
     public double getDiscriminant() {
         return b*b - 4*a*c;
     }
